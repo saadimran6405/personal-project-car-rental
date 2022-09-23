@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDGothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: silver;
+    align-items: center;
+    display: flex;
+    height: 80px;
+    width: 100%;
+    gap: 1.4rem;
+    justify-content: flex-end;
+    padding-right: 50px;
+    z-index: 10000;
+    position: sticky;
+    top: 0px;
+}
+header img{
+    box-shadow: 0 0 15px rgba(0,0,0,0.25);
+    width: 55px;
+    height: 100%;
+    margin-right: 900px;
+}
+
+header a{
+    font-size: 20px;
+    font-family: 'Anek Latin', sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+header a::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #B22222;
+    transition: width 0.5s;
+}
+header a:hover::after{
+    width: 100%;
+}
+header button{
+    padding: 8px 17px;
+    background-color: #B22222;
+    border: none;
+    border-radius: 13px;
+    color: white;
+    font-weight: bold;
+}
+header button:hover{
+    cursor: pointer;
+    background-color: #CA3433;
+    border-radius: 15px;
+    padding: 12px 22px;
+    transition: .5s;
+}
+/* .why-us a:active{
+    scroll-behavior: smooth;
+} */
+.reserve{
+    width: 100%;
+    height: 600px;
+    background-image: url("https://i.vgy.me/7N2y0T.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+}
+
+.text h2, p{
+    text-align: center;
+}
+.text{
+    background-color: rgba(0,0,0,0.70);
+    padding-top: 20px;
+}
+.text h2{
+    color: white;
+    font-size: 3rem;
+}
+.text p{
+    color: #AB8000;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.time__slot{
+    width: 70%;
+    height: 488px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0,0,0,0.35);
+
+}
+
+.pickup-date, .return-date{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: rgba(0,0,0,0.70);
+    color: white;
+    padding: 10px 150px;
+    font-size: 1.4rem;
+    font-family: 'BIZ UDGothic', sans-serif;
+}
+
+input[type="search"]{
+    width: 80%;
+    height: 35px;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid black;
+    margin-left: 98px;
+    margin-right: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: #333;
+    color: white;
+    border-radius: 12px;
+    padding-left: 5px;
+}
+.pickup-date{
+    margin-bottom: 50px;
+}
+.return-date{
+    margin-bottom: 50px;
+}
+input[type="date"], input[type="time"]{
+    border-radius: 12px;
+    border: none;
+    font-size: 0.9em;
+    background-color: lightgray;
+}
+input[type="date"], input[type="time"]:hover{
+    cursor: pointer;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button button{
+    font-size: 45px;
+    background-color: #CA3433;
+    border: none;
+    font-weight: bold;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    border-radius: 12px;
+    padding: 5px 20px;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+.button button:hover, .button button:focus, .button button:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.rental{
+    display: flex;
+    width: 100%;
+    height: 400px;
+}
+
+
+.texts{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 50%;
+    height: 400px;
+    padding: 58px 40px;
+}
+.texts h2{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    color: #B22222;
+}
+.p p{
+    text-align: left;
+    line-height: 25px;
+    font-size: 1.2rem;
+    color: #444;
+    font-family: 'Libre Baskerville', serif;
+}
+.p{
+    margin-bottom: 28px;
+}
+.video{
+    width: 50%;
+}
+.video iframe{
+    display: block;
+    margin: 45px auto;
+    border-radius: 12px;
+}
+
+.locations{
+    width: 100%;
+    height: 250px;
+    background-color: #111;
+}
+.locations h2{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 2rem;
+    color: white;
+    text-transform: uppercase;
+}
+.fleet{
+    width: 100%;
+    height: 450px;
+    border-bottom: 1px solid grey;
+}
+.fleet h3{
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 10px auto;
+}
+
+.clm img{
+    width: 100%;
+    height: 300px;
+    border-radius: 12px 12px 0px 0px;
+}
+.clm{
+    float: left;
+    width: 33.3%;
+    padding: 5px;
+}
+.clm a{
+    display: block;
+    margin: -14px auto;
+    padding: 14px 24px;
+    color: white;
+    background-color: #CA3433;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-align: center;
+    text-decoration: none;
+}
+.resources h3{
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 10px auto;
+}
+.ext{
+    float: left;
+    width: 33.3%;
+    padding: 10px;
+}
+.res img{
+    width: 100%;
+    height: 300px;
+}
+.ext{
+    height: 600px;
+    box-shadow: 0 0 15px rgb(0 0 0 / 25%);
+}
+.desc{
+    text-align: center;
+}
+.desc h4{
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+.red{
+    color: darkred;
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.pony{
+    color: #1c1c1c;
+    font-size: 1.2rem;
+}
+
+.desc button{
+    margin-top: 12px;
+    padding: 10px 25px;
+    background-color: #AB8000;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.2rem;
+}
+input[type="email"]{
+    margin-top: 12px;
+    width: 90%;
+    padding-left: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: none;
+    border-radius: 12px;
+}
+input[type="email"]:hover{
+    border: 1px solid black;
+    cursor: pointer;
+    background-color: aliceblue;
+    transition: .5s;
+}
